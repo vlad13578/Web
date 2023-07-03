@@ -1,7 +1,7 @@
- CSS Стилі шрифту та тексту. CSS font-size. CSS color, CSS text-shadow.
+### CSS Стилі шрифту та тексту. CSS font-size. CSS color, CSS text-shadow.
 [YouTube-link](https://youtu.be/seewcjGHreg)
- Властивості шрифту
-## font-family: 
+### Властивості шрифту
+#### font-family: 
 "Ім'я шрифту", тип шрифту</br>
 
     Приклад: font-family: Georgia, serif;
