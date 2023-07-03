@@ -163,7 +163,7 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
     margin: 0px 0px 15px 0px;
-    background: url("/img/check_icon.png") left no-repeat;
+    background: url("img/check_icon.png") left no-repeat;
     padding: 0px 0px 0px 35px;
 }
 
@@ -228,12 +228,12 @@ body {
 }
 
 .buttont span {
-    background: url("/img/Shape_2.svg") right no-repeat;
+    background: url("img/Shape_2.svg") right no-repeat;
     padding: 0px 32px 0px 0px;
 }
 
 .buttont1 span {
-    background: url("/img/Shape_2.svg") right no-repeat;
+    background: url("img/Shape_2.svg") right no-repeat;
     padding: 0px 32px 0px 0px;
 }
 
