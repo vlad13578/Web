@@ -1,5 +1,5 @@
 ### Властивості шрифту
-
+(https://github.com/vlad13578/web/blob/main/img/git/QIP%20Shot%20-%20Screen%205556.png?raw=true)
 font-family: "Ім'я шрифту", "Ім'я шрифту", тип шрифту
 Встановлює сімейство шрифту
 Типи шрифту:
