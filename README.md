@@ -20,8 +20,8 @@ oblique - Похиле накреслення. Курсив і похилий ш
 
 font-weight:</br>
 Встановлює насиченість шрифту.</br>
-- 100 - thin</br>
-- 300 - lite</br>
+- 100 - thin
+- 300 - lite
 - 400 - normal</br>
 -500 - medium</br>
 -600 - semibold</br>
