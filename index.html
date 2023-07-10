@@ -1,75 +1,75 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-    <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-
+<html lang="en">
     <head>
-        <!-- Заголовок страницы в браузере -->
-        <title>Урок</title>
-        <link rel="stylesheet" href="style.css" />
-        <!-- Кодировка страницы -->
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <!-- Отображаемое тело страницы -->
-
     <body>
         <div class="container">
-            <div class="containertop">
-                <div class="textmain">Travel</div>
-                <div class="textsub">
-                    Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.
-                </div>
+            <div class="block">
+                <div class="block1">possition_fixed z-index(1)</div>
+                <div class="block2">block2_z-index(2)</div>
+                <div class="block3">position_absolute z-index(3)</div>
+                <div class="block4">possition_sticky z-index(2)</div>
             </div>
-            <div class="containercenter">
-                <div class="containerimage_item">
-                    <img src="img/light-man_copy.jpg" alt="Картинки нет" />
-                </div>
-                <div class="containermaintext">
-                    <div class="text">
-                        <p>
-                            Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac,
-                            vestibulum at eros. Morbi leo risus, porta ac consectetur ac,
-                            vestibulum at eros. Donec ullamcorper nulla non metus auctor
-                            fringilla.
-                        </p>
-                        <p>
-                            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-                            vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia
-                            quam venenatis vestibulum.
-                        </p>
-                    </div>
-                </div>
+            <div class="text_header">Travel</div>
+            <div class="text_main">
+                Donec sed odio dui. Cras mattis consectetur purus
+                sit amet fermentum.
             </div>
-            <div class="containerbottom">
-                <ul class="listcontainer">
-                    <li>Put on this page information about your product</li>
-                    <li>A detailed description of your product</li>
-                    <li>Tell us about the advantages and merits</li>
-                    <li>
-                        <span>Associate the page with the payment system</span>
-                    </li>
-                </ul>
-                <!-- Crtl + Alt + стрілки -->
-                <ul class="listcontainer">
-                    <li>Put on this page information about your product</li>
-                    <li>A detailed description of your product</li>
-                    <li>Tell us about the advantages and merits</li>
-                    <li>
-                        <span>Associate the page with the payment system</span>
-                    </li>
-                </ul>
-                <div class="buttons">
-                    <a target="_blank" href="https://google.com" class="buttont">
+            <div class="image_block">
+                <img src="img/light-man_copy.png" class="img" alt="" />
+            </div>
+            <div class="container_bottom">
+                <div class="text_block">
+                    <p class="text">
+                        Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+                    <p class="text">
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                        venenatis vestibulum.
+                    </p>
+                    <p class="text">
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                        venenatis vestibulum.
+                    </p>
+                    <p class="text">
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                        vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                        venenatis vestibulum.
+                    </p>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li>Put on this page information about your product</li>
+                        <li>A detailed description of your product</li>
+                        <li>Tell us about the advantages and merits</li>
+                        <li>
+                            <span>Associate the page with the payment system</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_new">
+                        <li>Put on this page information about your product</li>
+                        <li>A detailed description of your product</li>
+                        <li>Tell us about the advantages and merits</li>
+                        <li>Associate the page with the payment system</li>
+                    </ul>
+                    <a
+                        target="_blank"
+                        href="http://google.com"
+                        class="content-bottom-info__link"
+                    >
                         <span>Full Story</span>
                     </a>
-                    <a target="_blank" href="https://google.com" class="buttont1">
-                        <span>Full Story</span>
-                    </a>
+                    <input placeholder="Введіть щось" class="placefolder" type="placefolder">
                 </div>
             </div>
         </div>
     </body>
 </html>
-<!-- .class>ul.classs>li.listclass{item $}*5 -->
-<!--Class Extractor "ctrl + `"-->
