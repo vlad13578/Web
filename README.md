@@ -573,4 +573,139 @@ _Якщо шрифта нема на Google Fonts:_
 }
 ```
 ___
-##FLEXBOX
+## МЕТА теги для сайта
+
+### Основні теги впливають на відображення сторінки
+```
+<!-- Кодування сторінки -->
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+```
+З появою HTML5 можна використовувати 
+```
+<meta charset="UTF-8">
+```
+
+Фіксована ширина
+```
+<!-- Налаштування адаптивності сторінки -->
+<meta name="viewport" content="width=1170">
+```
+Адаптивність
+```
+<!-- Налаштування адаптивності сторінки -->
+<meta name="viewport" content="width=device-width">
+```
+
+```
+<!-- Відключає примусове посилання у номера телефону на iOS -->
+<meta name="format-detection" content="telephone=no">
+```
+### SEO
+
+```
+<!-- Короткий опис сторінки -->
+<meta name="description" content="">
+```
+Пишемо не більше 140 символів.
+```
+<!-- Ключові слова сторінки -->
+<meta name="keywords" content=""> 
+```
+Пишемо не більше 20-ти слів. Ключові фрази розділяємо комою.
+
+```
+<!-- Управління доступом пошукових роботів до сторінки -->
+<meta name="robots" content="">
+```
+
+За замовчуванням сторінка індексується пошуковими система, тобто цей мета-тег додатково вказувати не потрібно. Але якщо завдання стоїть заборонити або обмежити індексацію, то існують такі значення:
+
+- none - заборонити індексацію сторінки повністю.
+- noindex - заборонити індексацію вмісту сторінки.
+- nofollow - ігнорувати посилання в межах веб-сторінки. 
+- noimageindex - заборонити індексацію присутніх на сторінці зображень
+- noarchive - заборонити виведення в результатах пошуку посилання "Збережена копія"
+- nosnippet - заборонити виведення в пошуковій видачі під назвою сторінки фрагмента тексту, що описує її зміст.
+
+Значення вказуються через кому. Наприклад:
+
+Заборона індексації сторінки повністю матиме такий вигляд: <br>
+`<meta name="robots" content="noindex, nofollow">`
+або так
+`<meta name="robots" content="none">`
+
+Заборона індексації посилань і зображень на сторінці матиме такий вигляд:<br>
+`<meta name="robots" content="noimageindex, nofollow">`
+при цьому текст сторінки буде доступний до індексації.
+
+### Технічні
+<!-- Автор сторінки -->
+```
+<meta name="Author" content="Пупкін Василь Петрович"> 
+<!-- Авторські права -->
+<meta name="Copyright" content="Зіміна Тетяна Юріївна"> 
+<!-- Адреса автора -->
+<meta name="Address" content="Місяць, кратер №97">
+<!-- Редирект (перезавантаження) сторінки. Затримка в секундах; url=Адреса сайту/сторінки -->
+<meta http-equiv="refresh" content="S; url=URL">
+```
+S= Затримка в секундах
+URL= Адреса сайту/сторінки
+### Для соціальних мереж
+
+Facebook
+Що б налаштувати вигляд нашої сторінки в пості ми пишемо такі мета теги:
+
+```
+<!-- локалізація сайту, для російськомовного сайту ru_RU -->
+<meta property="og:locale" content="ru_RU">
+<!-- тип контенту, за замовчуванням використовується article -->
+<meta property="og:type" content="article">
+<!-- заголовок сторінки, який буде виводитися в записі соціальної мережі -->
+<meta property="og:title" content="META теги">
+<!-- опис сторінки -->
+<meta property="og:description" content="Опис сторінки про META теги">
+<!-- посилання на зображення, яке буде публікуватися в записі -->
+<meta property="og:image" content="http://fls.guru/meta/img/bg.jpg">
+<!-- посилання на поточну сторінку -->
+<meta property="og:url" content="http://fls.guru/meta/">
+<!-- назва сайту -->
+<meta property="og:site_name" content="Фрілансер по життю">
+```
+
+Перевірити розмітку можна у [валідаторі від Facebook](https://developers.facebook.com/tools/debug/sharing/)
+
+Детальніше про протокол Open Graph можна почитати в [офіційній документації](https://ruogp.me/)
+
+Для створення Twitter Cards мета теги матимуть інший вигляд:
+
+```
+<!-- Тип карти, за замовчуванням використовується summary -->
+<meta name="twitter:card" content="summary">
+<!-- Ім'я/логін автора -->
+<meta name="twitter:site" content="Жека">
+<!-- Назва сторінки -->
+<meta name="twitter:title" content="META теги">
+<!-- Опис сторінки -->
+<meta name="twitter:description" content="про META теги">
+<!-- Посилання на зображення -->
+<meta name="twitter:image" content="http://fls.guru/meta/img/bg.jpg">
+```
+
+Перевіряємо результат у [валідаторі твіттер](https://cards-dev.twitter.com/validator)
+
+Детальніше про створення Twitter Cards можна почитати в [офіційній документації](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+___
+## FLEXBOX
+
+[Flexbox #1 Youtube-link](https://youtu.be/EO8hH_2OwCU)
+
+[Flexbox #2 Youtube-link](https://youtu.be/uPYUgipiFcM)
+
+[Flexbox #3 Youtube-link](https://youtu.be/cXAUxbu6X2E)
+
+[Flexbox #4 Youtube-link](https://youtu.be/8Gu40PFzOHI)
+
+[Flex-frog](https://flexboxfroggy.com/#uk)
+
+[Шпаргалка](https://fls.guru/flexbox.html)
