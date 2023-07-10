@@ -1,0 +1,64 @@
+//Підключення шрифтів
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lilita+One&family=Montserrat+Alternates:wght@400;700&family=Montserrat+Subrayada:wght@400;700&display=swap");
+
+// Підключені шрифти
+//font-family: 'Agdasima', sans-serif;
+//font-family: 'Lilita One', cursive;
+//font-family: 'Montserrat Alternates', sans-serif;
+//font-family: 'Montserrat Subrayada', sans-serif;
+
+//Підключення стилю Reset
+@import "_reset";
+
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-regular-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-medium-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-bold-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+.text:nth-child(1) {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 30px;
+}
+.text:nth-child(2) {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 30px;
+}
+.text:nth-child(3) {
+    font-family: "Lilita One", cursive;
+    font-size: 30px;
+}
+.text:nth-child(4) {
+    font-family: "Agdasima", sans-serif;
+    font-size: 30px;
+}
+.text:nth-child(5) {
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+}
+.text:nth-child(6) {
+    font-family: "pf_din_text_cond_pro";
+    font-weight: 700;
+    font-size: 30px;
+}
