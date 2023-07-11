@@ -1,29 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lilita+One&family=Montserrat+Alternates:wght@400;700&family=Montserrat+Subrayada:wght@400;700&display=swap");
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
+
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 :focus,
 :active {
     outline: none;
 }
+
 a:focus,
 a:active {
     outline: none;
 }
+
 nav,
 footer,
 header,
 aside {
     display: block;
 }
+
 html,
 body {
     height: 100%;
@@ -35,34 +39,43 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 input,
 button,
 textarea {
     font-family: inherit;
 }
+
 input::-ms-clear {
     display: none;
 }
+
 button {
     cursor: pointer;
 }
+
 button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+
 a,
 a:visited {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 ul li {
     list-style: none;
 }
+
 img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -71,6 +84,31 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-regular-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-medium-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pf_din_text_cond_pro";
+    src: url("../fonts/pfdintextcondpro-bold-webfont.woff2") format("woff2"),
+        url("../fonts/pfdintextcondpro-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
 }
 body {
     background: #e8e8e8 url(../img/Ellipse_1_copy.svg) 50% 900px no-repeat;
@@ -151,6 +189,27 @@ body {
 .text_block {
     margin: 0px 0px 50px 0px;
 }
+
+.text:nth-child(1) {
+    font-family: "Agdasima", sans-serif;
+}
+.text:nth-child(2) {
+    font-family: "Lilita One", cursive;
+}
+.text:nth-child(3) {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.text:nth-child(4) {
+    font-family: "Montserrat Subrayada", sans-serif;
+}
+.text:nth-child(5) {
+    font-family: "pf_din_text_cond_pro";
+}
+.text:nth-child(6) {
+    font-family: "pf_din_text_cond_pro";
+    font-weight: 700;
+}
+
 .text:nth-child(1):first-line {
     color: #11759c;
 }
@@ -312,8 +371,8 @@ body {
     background: url(../img/Shape_2.svg) no-repeat right;
 }
 /*.content-bottom-info__link > span {
-    background: url(img/Shape_2.svg) no-repeat right;
-    padding: 0 30px 0 0;
+  background: url(img/Shape_2.svg) no-repeat right;
+  padding: 0 30px 0 0;
 }*/
 .content-bottom-info__link:active {
     position: relative;
