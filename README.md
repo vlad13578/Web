@@ -709,3 +709,15 @@ ___
 [Flex-frog](https://flexboxfroggy.com/#uk)
 
 [Шпаргалка](https://fls.guru/flexbox.html)
+
+## І
+
+## Методологія БЕМ
+
+[Youtube-link](https://youtu.be/HihYQVuH64U)
+
+[Способи організації CCS-кода](https://habr.com/ru/articles/256109/)
+
+[Методологія БЕМ](https://avivi.pro/ua/blog/metodologiya-bem-v-deystvii/)
+
+[Документація](https://ru.bem.info/methodology/quick-start/)
