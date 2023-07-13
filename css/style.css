@@ -100,8 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #e8e8e8 url(../img/Ellipse_1_copy.svg) 50% 900px no-repeat;
   min-height: 100%;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 .wrapper .container {
   padding: 50px 0 0px 0;
@@ -252,10 +250,10 @@ h1, h2, h3, h4, h5, h6 {
   transition-timing-function: linear;
 }
 .button_block:nth-child(6) {
-  transition-timing-function: steps(5, end);
+  transition-timing-function: steps(10, end);
 }
 .button_block:nth-child(7) {
-  transition-timing-function: steps(5, start);
+  transition-timing-function: steps(10, start);
 }
 .button_block:nth-child(8) {
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.75);
@@ -274,6 +272,100 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.flex_conteiner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.animation {
+  border: 5px solid #7a7676;
+  height: 500px;
+  width: 500px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 25px;
+}
+.animation_element {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #4e4d4d;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 5s;
+}
+.animation_element:hover {
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  0% {
+    background-color: #00bfff;
+    left: 0;
+  }
+  10% {
+    height: 100px;
+    width: 100px;
+    border-radius: 0;
+  }
+  25% {
+    background-color: #1e90ff;
+    height: 50px;
+    width: 50px;
+    left: 88.5%;
+    top: 0;
+    border-radius: 50%;
+  }
+  35% {
+    height: 100px;
+    width: 100px;
+    border-radius: 0;
+    left: 77.5%;
+  }
+  50% {
+    background-color: #0000ff;
+    height: 50px;
+    width: 50px;
+    left: 88.5%;
+    top: 88.5%;
+    border-radius: 50%;
+  }
+  65% {
+    height: 100px;
+    width: 100px;
+    border-radius: 0;
+    top: 77.5%;
+  }
+  75% {
+    background-color: #1e90ff;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 88.5%;
+    border-radius: 50%;
+  }
+  85% {
+    height: 100px;
+    width: 100px;
+    border-radius: 0;
+  }
+  100% {
+    background-color: #00bfff;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+  }
+}
 .text_img_container .text_header {
   opacity: 0.6;
   color: #273d46;
