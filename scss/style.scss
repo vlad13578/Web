@@ -184,6 +184,79 @@ $ff5: "pf_din_text_cond_pro";
     }
 }
 
+.button {
+    &_container {
+        height: 100%;
+        padding: 20px;
+        background-color: #b9b8b8;
+        border: 5px solid #000;
+        border-radius: 2%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover .button_block {
+            width: 90%;
+            transition-duration: 2s;
+        }
+    }
+
+    &_block {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 50%;
+        border: 2px solid #092631;
+        transition-duration: 2s;
+        &:nth-child(odd) {
+            background-color: #005b77;
+        }
+        &:nth-child(even) {
+            background-color: #c5c204;
+        }
+        &:last-child {
+            margin: 0;
+        }
+        &:nth-child(1) {
+            transition-timing-function: ease;
+        }
+        &:nth-child(2) {
+            transition-timing-function: ease-in;
+        }
+        &:nth-child(3) {
+            transition-timing-function: ease-out;
+        }
+        &:nth-child(4) {
+            transition-timing-function: ease-in-out;
+        }
+        &:nth-child(5) {
+            transition-timing-function: linear;
+        }
+        &:nth-child(6) {
+            transition-timing-function: steps(5,end);
+        }
+        &:nth-child(7) {
+            transition-timing-function: steps(5,start);
+        }
+        &:nth-child(8) {
+            transition-timing-function:  cubic-bezier(0.68, -0.55, 0.265, 1.95);
+        }
+    }
+
+    &__button {
+        padding: 20px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            transition-timing-function: ease;
+            width: 100%;
+        }
+    }
+}
+
 .text_img_container {
     .text_header {
         opacity: 0.6;
@@ -360,13 +433,15 @@ $ff5: "pf_din_text_cond_pro";
         &:nth-child(3):hover {
             font-style: normal;
             color: rgb(255, 0, 0);
-            background: url(../img/check_icon_red.png) left no-repeat;
         }
         &:nth-child(4):hover {
             text-transform: none;
         }
         &:last-child {
             margin: 0;
+        }
+        &:hover {
+            transition-duration: 1s;
         }
     }
 }
@@ -384,18 +459,27 @@ $ff5: "pf_din_text_cond_pro";
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2.8px;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease 0s;
     &:after {
         content: "";
         padding: 0 30px 0 0;
         background: url(../img/Shape_2.svg) no-repeat right;
     }
     &:hover {
+        top: 3px;
         background-color: #0cbaff;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+        transition-duration: 1s, 100ms, 100ms;
+        transition-delay: 0s, 0.5s, 0.5s;
+        transition-property: background-color, top, box-shadow;
     }
     &:active {
-        position: relative;
-        top: 3px;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+        //transition-duration: 1s;
+        //position: relative;
+        //top: 3px;
+        //box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
     }
 }
 .placefolder {
@@ -404,6 +488,7 @@ $ff5: "pf_din_text_cond_pro";
     border: 1px solid #b0b0b0;
     padding: 20px;
     &:focus {
+        transition-duration: 1s;
         box-shadow: 0 0 20px rgba(127, 190, 213, 0.93);
     }
 }
@@ -565,17 +650,17 @@ $ff5: "pf_din_text_cond_pro";
         flex: 0 1 33.333%;
         padding: 0 22.5px;
         display: flex;
-        &:nth-child(1){
+        &:nth-child(1) {
             order: 3;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
             order: 2;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
             order: 1;
         }
     }
-    &__item { 
+    &__item {
         display: flex;
         flex-direction: column;
         background-color: #445162;
