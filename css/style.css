@@ -218,14 +218,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button_container:hover .button_block {
   width: 90%;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .button_block {
   border-radius: 10px;
   margin-bottom: 20px;
   width: 50%;
   border: 2px solid #092631;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .button_block:nth-child(odd) {
   background-color: #005b77;
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
   transition-timing-function: steps(5, start);
 }
 .button_block:nth-child(8) {
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.95);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.75);
 }
 .button__button {
   padding: 20px;

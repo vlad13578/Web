@@ -1,7 +1,23 @@
+## Useful link
+
+[Youtube-link](https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr)
+
+[Inspect](https://inspect.ceros.com/design-upload)
+
+[Can I use?](https://caniuse.com/)
+
+[Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator)
+
+[CSS game](https://habr.com/ru/companies/ruvds/articles/719892/)
+
 ## Markdown
 [Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 [Youtube-link](https://youtu.be/FFBTGdEMrQ4)
+
+![Styling text](/img/git/QIP%20Shot%20-%20Screen%205589.png)
+
+![Styling text](/img/git/QIP%20Shot%20-%20Screen%205588.png)
 ## Emmet
 
 [Всі скорочення](https://docs.emmet.io/cheat-sheet/)
@@ -97,6 +113,7 @@
 -   fantasy - декоративні шрифти;</br>
 -   monospace - моноширинні шрифти, ширина кожного символу в такому сімействі однакова (шрифт Courier).</br>
 
+![Styling text](/img/git/QIP%20Shot%20-%20Screen%205554.png)
 #### font-size
 
 Визначає розмір шрифту елемента.
@@ -708,13 +725,77 @@ ___
 
 [Flex-frog](https://flexboxfroggy.com/#uk)
 
+[Flex Box Adventure](https://codingfantasy.com/games/flexboxadventure) 
+
 [Шпаргалка](https://fls.guru/flexbox.html)
 
-## І
+## Тransitions
+
+[Youtube-link](https://youtu.be/yZFg3cuq_LU)
+
+[Шпаргалка](https://fls.guru/csstransition.html)
+
+#### transition-duration: 
+
+Визначає проміжок часу, протягом якого має здійснюватися перехід. Власне - тут ми вказуємо час, за який одне значення властивості переходить (анімується) в інше. Властивість не успадковується.
+Значення вказуються в секундах або мілісекунлах: (**1s 0.5s  500ms**)
+
+    transition-duration: 1s;
+
+#### transition-property: 
+
+Містить назву CSS-властивостей, до яких буде застосовано ефект переходу. Значення властивості може містити як одну властивість, так і список властивостей через кому. Властивість не успадковується.
+
+    transition-property: all;
+
+#### transition-delay:
+
+Затримка виконання переходу. Дозволяє зробити так, щоб зміна властивості відбувалася не миттєво, а з деякою затримкою. Час затримки переходу вказується в секундах або мілісекундах. (**1s 0.5s  500ms**) Властивість не успадковується.
+
+    transition-delay: 0s;
+
+#### transition-timing-function:
+
+Задає стиль нашого переходу, тобто певний сценарій, за яким буде здійснюватися анімація.
+
+    transition-timing-function: ease;
+
+- ease - Перехід починається повільно, розганяється швидко і сповільнюється в кінці. Відповідає cubic-bezier(0.25,0.1,0.25,1).
+- ease-in - Перехід починається повільно, а потім плавно прискорюється в кінці. Відповідає cubic-bezier(0.42,0,0,1,1).
+- ease-out - Перехід починається швидко і плавно сповільнюється в кінці. Відповідає cubic-bezier(0,0,0.58,1).
+- ease-in-out - Перехід повільно починається і повільно закінчується. Відповідає cubic-bezier(0.42,0,0.58,1).
+- linear - Перехід відбувається рівномірно протягом усього часу, без коливань у швидкості. Відповідає cubic-bezier(0,0,1,1).
+- steps(int,start|end) - Тимчасова функція дає змогу розбити анімацію на чітку кількість кроків, зазначених в int. Так само можна задати момент виконання: Start - означає, що на початку анімації потрібно відразу застосувати першу зміну. End - означало б, що зміни потрібно застосовувати не на початку, а наприкінці кожного кроку
+- cubic-bezier(x1,y1,x2,y2) - Дає змогу вручну встановити значення (позитивні та негативні) для кривої прискорення і створити свою власну анімацію
+
+#### transition:
+
+Для елемента можна задати кілька послідовних переходів, перерахувавши їх через кому. Кожен перехід можна оформити своїми значеннями переходу.
+
+    transition: transition-property transition-duration transition-timing-function transition-delay
+
+    transition: background-color 1s ease 0.5s, padding 5s ease-out 0s;
+
+Те саме:
+
+```
+transition-property: background-color, padding;
+transition-duration: 1s, 5s;
+transition-delay: 0.5s, 0s;
+transition-timing-function: ease, ease-out;
+```
+___
+
+## CSS animation и @keyframes
+
+[Youtube-link](https://youtu.be/GKgOOuTL0po) 
+
+[Шпаргалка](https://fls.guru/cssanimation.html)
+
 
 ## Методологія БЕМ
 
-[Youtube-link](https://youtu.be/HihYQVuH64U)
+[Youtube-link](https://youtu.be/HihYQVuH64U) 
 
 [Способи організації CCS-кода](https://habr.com/ru/articles/256109/)
 

@@ -197,7 +197,7 @@ $ff5: "pf_din_text_cond_pro";
         align-items: center;
         &:hover .button_block {
             width: 90%;
-            transition-duration: 2s;
+            transition-duration: 1s;
         }
     }
 
@@ -206,7 +206,7 @@ $ff5: "pf_din_text_cond_pro";
         margin-bottom: 20px;
         width: 50%;
         border: 2px solid #092631;
-        transition-duration: 2s;
+        transition-duration: 1s;
         &:nth-child(odd) {
             background-color: #005b77;
         }
@@ -232,13 +232,13 @@ $ff5: "pf_din_text_cond_pro";
             transition-timing-function: linear;
         }
         &:nth-child(6) {
-            transition-timing-function: steps(5,end);
+            transition-timing-function: steps(5, end);
         }
         &:nth-child(7) {
-            transition-timing-function: steps(5,start);
+            transition-timing-function: steps(5, start);
         }
         &:nth-child(8) {
-            transition-timing-function:  cubic-bezier(0.68, -0.55, 0.265, 1.95);
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.75);
         }
     }
 
@@ -462,6 +462,8 @@ $ff5: "pf_din_text_cond_pro";
     position: relative;
     top: 0;
     transition: all 0.5s ease 0s;
+    //transition: transition-property transition-duration transition-timing-function transition-delay
+    //Через кому можна вказувати декілька параметрів, наприклад для кольору, тіні і тд.
     &:after {
         content: "";
         padding: 0 30px 0 0;
