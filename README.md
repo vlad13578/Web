@@ -10,6 +10,12 @@
 
 [CSS game](https://habr.com/ru/companies/ruvds/articles/719892/)
 
+[Онлайн декодер WebP](https://squoosh.app/)
+
+[Favicon](https://realfavicongenerator.net/)
+
+[Favicon_drav](https://www.favicon.by/)
+
 ## Markdown
 [Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -792,6 +798,93 @@ ___
 
 [Шпаргалка](https://fls.guru/cssanimation.html)
 
+#### animation-name
+Визначає список застосовуваних до елемента анімацій (ключових кадрів). Можна вказати через кому. Причому пріоритет в останнього запису.
+
+    animation-name: name;
+
+    універсальний запис:
+    animation: circle;
+
+_circle - назва анімації_
+
+#### animation-duration
+Відповідає за тривалість анімації.  Час анімації вказується в секундах або мілісекундах. (**1s 0.5s  500ms**)
+
+    animation-duration: 500ms;
+
+    універсальний запис:
+    animation: circle 500ms;
+
+#### animation-timing-function
+Задає стиль нашого переходу, тобто певний сценарій, за яким буде здійснюватися анімація.
+
+    animation-timing-function: ease;
+
+    універсальний запис:
+    animation: circle 1s ease;
+
+
+- ease - Перехід починається повільно, розганяється швидко і сповільнюється в кінці. Відповідає cubic-bezier(0.25,0.1,0.25,1).
+- ease-in - Перехід починається повільно, а потім плавно прискорюється в кінці. Відповідає cubic-bezier(0.42,0,0,1,1).
+- ease-out - Перехід починається швидко і плавно сповільнюється в кінці. Відповідає cubic-bezier(0,0,0.58,1).
+- ease-in-out - Перехід повільно починається і повільно закінчується. Відповідає cubic-bezier(0.42,0,0.58,1).
+- linear - Перехід відбувається рівномірно протягом усього часу, без коливань у швидкості. Відповідає cubic-bezier(0,0,1,1).
+- steps(int,start|end) - Тимчасова функція дає змогу розбити анімацію на чітку кількість кроків, зазначених в int. Так само можна задати момент виконання: Start - означає, що на початку анімації потрібно відразу застосувати першу зміну. End - означало б, що зміни потрібно застосовувати не на початку, а наприкінці кожного кроку
+- cubic-bezier(x1,y1,x2,y2) - Дає змогу вручну встановити значення (позитивні та негативні) для кривої прискорення і створити свою власну анімацію
+
+#### animation-iteration-count
+Відповідає за повтор програвання ключових кадрів. (**1, 2.5, 10, і тд.**) або **infinite** (нескінченно)
+
+    animation-iteration-count: infinite;
+
+    універсальний запис:
+    animation: circle 1s linear infinite;
+
+
+#### animation-direction
+Визначає напрямок і тип програвання ключових кадрів.
+
+    animation-direction: alternate-reverse;
+
+    універсальний запис:
+    animation: circle 1s linear infinite alternate-reverse;
+
+- normal - Ключові кадри програються так, як вони написані.
+- reverse - Кадри будуть програватися у зворотному порядку.
+- alternate - Кожен парний прохід по кадрах програватиметься у зворотному порядку.
+- alternate-reverse - Кожен непарний прохід по кадрах буде програватися у зворотному порядку.
+
+#### animation-play-state
+Дозволяє запускати або зупиняти анімацію за подією. (наприклад hover)
+
+    animation-play-state: paused;
+
+    універсальний запис:
+    animation: circle 1s linear infinite normal;
+
+- running (за замовчуванням) - Анімація програється..
+- paused При наведенні(наприклад), анімація на паузі.
+
+#### animation-delay
+Відповідає за затримку перед програванням. Час затримки вказується в секундах або мілісекундах. (**1s 0.5s  500ms**)
+
+    animation-delay: 1s;
+
+    універсальний запис:
+    animation: circle 1s linear infinite normal running 1s;
+
+#### animation-fill-mode
+Визначає, які значення анімованих css-властивостей застосуються до об'єкта після завершення анімації.
+    animation-fill-mode: none;
+
+    універсальний запис:
+    animation: circle 1s linear infinite normal running 0s none;
+
+- none (за замовчуванням)
+- forwards 
+- backwards 
+- both 
 
 ## Методологія БЕМ
 

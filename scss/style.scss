@@ -64,8 +64,6 @@ $ff5: "pf_din_text_cond_pro";
     background: #e8e8e8 url(../img/Ellipse_1_copy.svg) 50% 900px no-repeat;
     min-height: 100%;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     .container {
         padding: 50px 0 0px 0;
         max-width: 841px;
@@ -232,10 +230,10 @@ $ff5: "pf_din_text_cond_pro";
             transition-timing-function: linear;
         }
         &:nth-child(6) {
-            transition-timing-function: steps(5, end);
+            transition-timing-function: steps(10, end);
         }
         &:nth-child(7) {
-            transition-timing-function: steps(5, start);
+            transition-timing-function: steps(10, start);
         }
         &:nth-child(8) {
             transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.75);
@@ -254,6 +252,102 @@ $ff5: "pf_din_text_cond_pro";
             transition-timing-function: ease;
             width: 100%;
         }
+    }
+}
+
+.flex_conteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.animation {
+    border: 5px solid #7a7676;
+    height: 500px;
+    width: 500px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 25px;
+    //&:hover .animation_element {
+    //    animation-play-state: paused;
+    //}
+    &_element {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        background-color: #4e4d4d;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        animation-name: circle;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-delay: 5s;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+@keyframes circle {
+    0% {
+        background-color: #00bfff;
+        left: 0;
+    }
+    10% {
+        height: 100px;
+        width: 100px;
+        border-radius: 0;
+    }
+    25% {
+        background-color: #1e90ff;
+        height: 50px;
+        width: 50px;
+        left: 88.5%;
+        top: 0;
+        border-radius: 50%;
+    }
+    35% {
+        height: 100px;
+        width: 100px;
+        border-radius: 0;
+        left: 77.5%;
+    }
+    50% {
+        background-color: #0000ff;
+        height: 50px;
+        width: 50px;
+        left: 88.5%;
+        top: 88.5%;
+        border-radius: 50%;
+    }
+    65% {
+        height: 100px;
+        width: 100px;
+        border-radius: 0;
+        top: 77.5%;
+    }
+    75% {
+        background-color: #1e90ff;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 88.5%;
+        border-radius: 50%;
+    }
+    85% {
+        height: 100px;
+        width: 100px;
+        border-radius: 0;
+    }
+    100% {
+        background-color: #00bfff;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
     }
 }
 
