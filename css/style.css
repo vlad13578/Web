@@ -809,6 +809,7 @@ header {
   padding: 0;
 }
 .footer_container .footer_raw .footer_icon_container a:hover {
+  opacity: 0.5;
   transform: scale(2);
   transition: transform 0.25s;
 }/*# sourceMappingURL=style.css.map */

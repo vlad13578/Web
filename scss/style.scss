@@ -883,6 +883,7 @@ header {
                     padding: 0;
                 }
                 &:hover {
+                    opacity: 0.5;
                     transform: scale(2);
                     transition: transform 0.25s;
                 }
