@@ -807,4 +807,8 @@ header {
 }
 .footer_container .footer_raw .footer_icon_container a:last-child {
   padding: 0;
+}
+.footer_container .footer_raw .footer_icon_container a:hover {
+  transform: scale(2);
+  transition: transform 0.25s;
 }/*# sourceMappingURL=style.css.map */
