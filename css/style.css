@@ -105,7 +105,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 80px 10px 10px 10px;
   max-width: 841px;
   margin: 0% auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper .container {
+    margin-bottom: 0px;
+  }
 }
 
 header {
@@ -502,7 +507,12 @@ header {
 .ul li:before {
   content: "";
   padding: 0 0 0px 35px;
-  background: url(../img/check_icon.png) left no-repeat;
+  background: url(../img/check_icon.png) left/contain no-repeat;
+}
+@media screen and (max-width: 550px) {
+  .ul li:before {
+    padding: 0 0 0px 25px;
+  }
 }
 .ul li:last-child {
   margin: 0;
@@ -535,7 +545,12 @@ header {
 .ul_new li:before {
   content: "";
   padding: 0 0 0px 35px;
-  background: url(../img/check_icon.png) left no-repeat;
+  background: url(../img/check_icon.png) left/contain no-repeat;
+}
+@media screen and (max-width: 550px) {
+  .ul_new li:before {
+    padding: 0 0 0px 25px;
+  }
 }
 .ul_new li:nth-child(1) {
   text-decoration: line-through;
