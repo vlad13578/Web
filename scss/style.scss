@@ -68,7 +68,10 @@ $ff5: "pf_din_text_cond_pro";
         padding: 80px 10px 10px 10px;
         max-width: 841px;
         margin: 0% auto;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 0px;
+        }
     }
 }
 //.content {
@@ -569,7 +572,10 @@ header {
         &:before {
             content: "";
             padding: 0 0 0px 35px;
-            background: url(../img/check_icon.png) left no-repeat;
+            background: url(../img/check_icon.png) left/contain no-repeat;
+            @media screen and (max-width: 550px) {
+                padding: 0 0 0px 25px;
+            }
         }
         &:last-child {
             margin: 0;
@@ -603,7 +609,10 @@ header {
         &:before {
             content: "";
             padding: 0 0 0px 35px;
-            background: url(../img/check_icon.png) left no-repeat;
+            background: url(../img/check_icon.png) left /contain  no-repeat;
+            @media screen and (max-width: 550px) {
+                padding: 0 0 0px 25px;
+            }
         }
         &:nth-child(1) {
             text-decoration: line-through;
