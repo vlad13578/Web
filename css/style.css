@@ -748,7 +748,6 @@ header {
   color: #445161;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 30px;
-  line-height: 36px;
 }
 .vertical__body {
   max-width: 990px;
@@ -757,7 +756,7 @@ header {
 .vertical__row {
   display: flex;
   margin: 0 -22.5px;
-  padding: 10px;
+  padding: 0 20px;
 }
 .vertical_column {
   flex: 0 1 33.333%;
@@ -920,9 +919,29 @@ header {
   transform: rotate3d(1, 1, 1, 360deg) scale3d(1.2, 1.2, 1.2);
 }
 
+@media screen and (max-width: 1000px) {
+  .vertical {
+    padding: 25px 0;
+  }
+  .vertical__title {
+    margin-bottom: 25px;
+  }
+  .vertical__row {
+    margin: 0 -10px;
+  }
+  .vertical_column {
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 720px) {
-  .button__button p {
-    display: none;
+  .vertical__title {
+    margin-bottom: 5px;
+  }
+  .vertical__row {
+    flex-direction: column;
+  }
+  .vertical_column {
+    padding: 20px 20px 0px 20px;
   }
 }
 @media screen and (max-width: 520px) {
@@ -977,6 +996,16 @@ header {
   }
 }
 @media screen and (max-width: 420px) {
+  .vertical__title {
+    font-size: 24px;
+  }
+  .vertical__subtitle {
+    font-size: 18px;
+  }
+  .vertical__lable {
+    font-size: 34px;
+    padding: 10px 0;
+  }
   .animation {
     max-width: 300px;
     max-height: 300px;
