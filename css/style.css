@@ -285,7 +285,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .animation {
@@ -920,7 +920,30 @@ header {
   transform: rotate3d(1, 1, 1, 360deg) scale3d(1.2, 1.2, 1.2);
 }
 
+@media screen and (max-width: 720px) {
+  .button__button p {
+    display: none;
+  }
+}
 @media screen and (max-width: 520px) {
+  .container_bottom {
+    padding: 0px 25px;
+  }
+  .text_block {
+    margin: 0px 0px 30px 0px;
+  }
+  .ul {
+    margin: 0px 0px 40px 0px;
+  }
+  .ul li {
+    font-size: 15px;
+  }
+  .ul_new {
+    margin: 0px 0px 40px 0px;
+  }
+  .ul_new li {
+    font-size: 15px;
+  }
   .animation {
     max-width: 400px;
     max-height: 400px;
@@ -949,6 +972,9 @@ header {
   .block1 li P {
     display: none;
   }
+  .wrapper .container {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 420px) {
   .animation {
@@ -959,13 +985,14 @@ header {
     font-size: 12px;
     padding: 12px;
   }
-  .text_main {
-    margin-bottom: 200px;
-  }
 }
 @media screen and (max-width: 320px) {
   .animation {
     max-width: 250px;
     max-height: 250px;
+  }
+  .button__button {
+    font-size: 10px;
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
