@@ -1017,6 +1017,11 @@ header {
     .vertical_column {
         padding: 0 10px;
     }
+    .button__button{
+        p {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1076,7 +1081,7 @@ header {
     }
     .block1 {
         li {
-            P {
+            p {
                 display: none;
             }
         }
