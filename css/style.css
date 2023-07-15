@@ -138,6 +138,7 @@ header {
 }
 .block1 a {
   border-radius: 50%;
+  color: #000000;
 }
 .block1 span {
   width: 48px;
@@ -153,6 +154,43 @@ header {
 }
 .block1 ul {
   display: flex;
+}
+.block1 ul a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+  height: 50px;
+  transition-duration: 0.5s;
+}
+.block1 ul a:nth-child(2)::before {
+  content: "";
+  padding: 0px 0 0px 25px;
+  background: url(../img/icon/Question.svg) left/contain no-repeat;
+}
+.block1 ul a:nth-child(1)::before {
+  content: "";
+  padding: 0 0 0px 25px;
+  background: url(../img/icon/Search\ 1.svg) left/contain no-repeat;
+}
+.block1 ul a:nth-child(3)::before {
+  content: "";
+  padding: 0 0 0px 25px;
+  background: url(../img/icon/bell.svg) left/contain no-repeat;
+}
+.block1 ul a:nth-child(4)::before {
+  content: "";
+  padding: 0 0 0px 25px;
+  background: url(../img/icon/home.svg) left/contain no-repeat;
+}
+.block1 ul a:hover {
+  opacity: 0.4;
+  transition-duration: 0.5s;
+}
+.block1 ul a:last-child() {
+  padding: 0;
+}
+.block1 ul a p {
+  padding: 0 0px 0 5px;
 }
 .block1 ul li {
   display: flex;
@@ -171,22 +209,22 @@ header {
 .block1 ul li:last-child() {
   padding: 0;
 }
-.block1 ul li:nth-child(2)::before {
+.block1 ul li a:nth-child(2)::before {
   content: "";
   padding: 0px 0 0px 25px;
   background: url(../img/icon/Question.svg) left/contain no-repeat;
 }
-.block1 ul li:nth-child(1)::before {
+.block1 ul li a:nth-child(1)::before {
   content: "";
   padding: 0 0 0px 25px;
   background: url(../img/icon/Search\ 1.svg) left/contain no-repeat;
 }
-.block1 ul li:nth-child(3)::before {
+.block1 ul li a:nth-child(3)::before {
   content: "";
   padding: 0 0 0px 25px;
   background: url(../img/icon/bell.svg) left/contain no-repeat;
 }
-.block1 ul li:nth-child(4)::before {
+.block1 ul li a:nth-child(4)::before {
   content: "";
   padding: 0 0 0px 25px;
   background: url(../img/icon/home.svg) left/contain no-repeat;
@@ -745,8 +783,26 @@ header {
   justify-content: space-between;
   padding: 50px 120px 50px 50px;
 }
+@media screen and (max-width: 930px) {
+  .flex-lesson_container .middle_container {
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container {
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+}
 .flex-lesson_container .middle_container .img_container {
   flex: 0 0 430px;
+}
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container .img_container {
+    flex: 100%;
+    margin-bottom: 10px;
+  }
 }
 .flex-lesson_container .middle_container .img_container img {
   max-width: 100%;
@@ -755,6 +811,11 @@ header {
   margin-left: 38px;
   flex: 1 1 auto;
 }
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container .middle_text_container {
+    margin-left: 0;
+  }
+}
 .flex-lesson_container .middle_container .middle_text_container .middle_main_text {
   color: #445161;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -762,14 +823,30 @@ header {
   line-height: 36px;
   margin: 0 0 20px 0;
 }
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container .middle_text_container .middle_main_text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .flex-lesson_container .middle_container .middle_text_container .sub_text {
   color: #333333;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container .middle_text_container .sub_text {
+    font-size: 14px;
+  }
+}
 .flex-lesson_container .middle_container .middle_text_container .sub_text p {
   margin: 0 0 25px 0;
+}
+@media screen and (max-width: 550px) {
+  .flex-lesson_container .middle_container .middle_text_container .sub_text p {
+    margin-bottom: 10px;
+  }
 }
 .flex-lesson_container .middle_container .middle_text_container .sub_text p:last-child {
   margin: 0;
@@ -1075,6 +1152,7 @@ header {
   }
   .ul_new li {
     font-size: 15px;
+    line-height: 17px;
   }
   .animation {
     max-width: 400px;
@@ -1101,7 +1179,7 @@ header {
     margin-bottom: 20px;
     font-size: 20px;
   }
-  .block1 li p {
+  .block1 p {
     display: none;
   }
   .wrapper .container {
