@@ -648,7 +648,7 @@ header {
   padding: 0 30px 0 0;
   background: url(../img/Shape_2.svg) no-repeat right;
 }
-.content-bottom-info__link:hover {
+.content-bottom-info__link:hover:active {
   top: 3px;
   background-color: #0cbaff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
