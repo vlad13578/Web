@@ -1,4 +1,9 @@
 ## Useful link
+[Приклад тестового завдання](https://truepositive.notion.site/ae53618268294077a1302891f72409ba)
+
+[ratatype](https://www.ratatype.ua/#typing-tutor)
+
+[learn-anything](https://learn-anything.xyz/web-development/front-end)
 
 [Youtube-link](https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr)
 
@@ -16,6 +21,8 @@
 
 [Favicon_drav](https://www.favicon.by/)
 
+[Фон під текстом](https://snipp.ru/html-css/text-background)
+
 ## Markdown
 [Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -25,6 +32,7 @@
 
 ![Styling text](/img/git/QIP%20Shot%20-%20Screen%205588.png)
 ## Emmet
+[EMMET ШПАРГАЛКА ДЛЯ БЛИСКАВИЧНОЇ ВЕРСТКИ](https://dwstroy.ru/stail/plaginy-rasshireniya/emmet-shpargalka/)
 
 [Всі скорочення](https://docs.emmet.io/cheat-sheet/)
 
