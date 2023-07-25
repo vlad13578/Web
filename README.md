@@ -1,6 +1,8 @@
 ## Useful link
 [Приклад тестового завдання](https://truepositive.notion.site/ae53618268294077a1302891f72409ba)
 
+[validator HTML](https://validator.w3.org/)
+
 [ratatype](https://www.ratatype.ua/#typing-tutor)
 
 [learn-anything](https://learn-anything.xyz/web-development/front-end)
@@ -12,6 +14,8 @@
 [Can I use?](https://caniuse.com/)
 
 [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator)
+
+[Transfonter](https://transfonter.org/)
 
 [CSS game](https://habr.com/ru/companies/ruvds/articles/719892/)
 
